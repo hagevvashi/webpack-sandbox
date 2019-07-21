@@ -1,0 +1,15 @@
+version: '3'
+services:
+  webpack:
+    build: .
+    volumes:
+      - ./src:/app/src:ro
+      - ./dist:/app/dist:z
+    command: bash -c 'yarn build'
+    tty: true
+  nginx:
+    build: ./nginx
+    ports:
+      - 8642:8080
+    volumes:
+      - ./dist:/wwwroot:ro
