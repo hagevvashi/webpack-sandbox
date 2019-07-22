@@ -7,7 +7,6 @@ const dist = resolve(`${__dirname}/dist`);
 // const nodeModules = resolve(`${__dirname}/node_modules`);
 
 module.exports = {
-  devtool: '#inline-source-map',
   context: src,
   entry: './js/index.ts',
   output: {
@@ -25,7 +24,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
         use: [
           {
@@ -39,7 +38,7 @@ module.exports = {
       },
       {
         enforce: 'pre',
-        test: /\.ts?$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
         use: [{ loader: 'eslint-loader' }]
       }
