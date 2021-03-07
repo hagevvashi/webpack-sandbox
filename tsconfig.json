@@ -1,13 +1,22 @@
 {
   "compilerOptions": {
+    "incremental": true,
     "target": "ESNEXT",
-    "module": "ESNext",
-    "sourceMap": true,
+    "module": "commonjs",
+    // "jsx": "preserve",
+    "outDir": "./dist",
+    "noEmit": true,
     "strict": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    // "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true
   }
 }
