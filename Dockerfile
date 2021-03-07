@@ -1,4 +1,4 @@
-FROM node
+FROM node:14.16.0
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY . /app
 
-RUN yarn install --frozen-lockfile
+RUN npm ci

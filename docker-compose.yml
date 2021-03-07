@@ -5,7 +5,7 @@ services:
     volumes:
       - ./src:/app/src:ro
       - ./dist:/app/dist:z
-    command: bash -c 'yarn build'
+    command: bash -c 'npm run build'
     tty: true
   nginx:
     build: ./nginx
