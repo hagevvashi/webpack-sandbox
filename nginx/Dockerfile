@@ -1,4 +1,4 @@
-FROM nginx:1.18.0
+FROM nginx:1.21.3
 
 RUN mkdir /wwwroot
 COPY ./nginx.conf /etc/nginx/nginx.conf
