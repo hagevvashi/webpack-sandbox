@@ -9,8 +9,8 @@
     "build": "NODE_ENV=production webpack"
   },
   "devDependencies": {
-    "@babel/core": "7.13.8",
-    "@babel/preset-env": "7.13.9",
+    "@babel/core": "7.28.5",
+    "@babel/preset-env": "7.28.5",
     "babel-loader": "8.2.2",
     "html-webpack-plugin": "5.2.0",
     "ts-node": "9.1.1",
